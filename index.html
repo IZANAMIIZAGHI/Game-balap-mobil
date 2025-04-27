@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Balap Mobil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Balap Mobil</h1>
+        <p>Pilih Mobil:</p>
+        <div id="carSelect">
+            <img src="img/player1.png" class="selectCar" onclick="selectCar('img/player1.png')">
+            <img src="img/player2.png" class="selectCar" onclick="selectCar('img/player2.png')">
+        </div>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div id="gameArea" class="hidden">
+        <div id="score">Score: 0</div>
+        <img id="road" src="img/road.png">
+        <img id="playerCar" src="">
+    </div>
+
+    <audio id="crashSound" src="sound/crash.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
